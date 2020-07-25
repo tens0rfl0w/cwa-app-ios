@@ -177,6 +177,11 @@
 		71FE1C86247AC33D00851FEB /* ExposureSubmissionTestResultHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FE1C84247AC33D00851FEB /* ExposureSubmissionTestResultHeaderView.swift */; };
 		71FE1C8C247AC79D00851FEB /* DynamicTableViewIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71FE1C8A247AC79D00851FEB /* DynamicTableViewIconCell.swift */; };
 		71FE1C8D247AC79D00851FEB /* DynamicTableViewIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71FE1C8B247AC79D00851FEB /* DynamicTableViewIconCell.xib */; };
+		784E8EF924CC871E00B2B090 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784E8EF824CC871E00B2B090 /* WidgetKit.framework */; };
+		784E8EFB24CC871E00B2B090 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784E8EFA24CC871E00B2B090 /* SwiftUI.framework */; };
+		784E8EFE24CC871E00B2B090 /* ENAWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784E8EFD24CC871E00B2B090 /* ENAWidget.swift */; };
+		784E8F0124CC872000B2B090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784E8F0024CC872000B2B090 /* Assets.xcassets */; };
+		784E8F0724CC872000B2B090 /* ENAWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 784E8EF724CC871E00B2B090 /* ENAWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		85142501245DA0B3009D2791 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85142500245DA0B3009D2791 /* UIViewController+Alert.swift */; };
 		8539874F2467094E00D28B62 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8539874E2467094E00D28B62 /* AppIcon.xcassets */; };
 		853D987A24694A8700490DBA /* ENAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853D987924694A8700490DBA /* ENAButton.swift */; };
@@ -387,6 +392,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		784E8F0524CC872000B2B090 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85D759332457048F008175F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 784E8EF624CC871E00B2B090;
+			remoteInfo = ENAWidgetExtension;
+		};
 		85D7595524570491008175F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 85D759332457048F008175F0 /* Project object */;
@@ -404,6 +416,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		784E8F0824CC872100B2B090 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				784E8F0724CC872000B2B090 /* ENAWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B102BDB924603FD600CD55A2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -602,6 +625,12 @@
 		71FE1C84247AC33D00851FEB /* ExposureSubmissionTestResultHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExposureSubmissionTestResultHeaderView.swift; sourceTree = "<group>"; };
 		71FE1C8A247AC79D00851FEB /* DynamicTableViewIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicTableViewIconCell.swift; sourceTree = "<group>"; };
 		71FE1C8B247AC79D00851FEB /* DynamicTableViewIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicTableViewIconCell.xib; sourceTree = "<group>"; };
+		784E8EF724CC871E00B2B090 /* ENAWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ENAWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		784E8EF824CC871E00B2B090 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		784E8EFA24CC871E00B2B090 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		784E8EFD24CC871E00B2B090 /* ENAWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENAWidget.swift; sourceTree = "<group>"; };
+		784E8F0024CC872000B2B090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		784E8F0224CC872000B2B090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85142500245DA0B3009D2791 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		8539874E2467094E00D28B62 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		853D987924694A8700490DBA /* ENAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ENAButton.swift; sourceTree = "<group>"; };
@@ -844,6 +873,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		784E8EF424CC871E00B2B090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784E8EFB24CC871E00B2B090 /* SwiftUI.framework in Frameworks */,
+				784E8EF924CC871E00B2B090 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85D759382457048F008175F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -933,6 +971,8 @@
 			isa = PBXGroup;
 			children = (
 				858F6F6D245A103C009FFD33 /* ExposureNotification.framework */,
+				784E8EF824CC871E00B2B090 /* WidgetKit.framework */,
+				784E8EFA24CC871E00B2B090 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1331,6 +1371,16 @@
 			path = ExposureSubmission;
 			sourceTree = "<group>";
 		};
+		784E8EFC24CC871E00B2B090 /* ENAWidget */ = {
+			isa = PBXGroup;
+			children = (
+				784E8EFD24CC871E00B2B090 /* ENAWidget.swift */,
+				784E8F0024CC872000B2B090 /* Assets.xcassets */,
+				784E8F0224CC872000B2B090 /* Info.plist */,
+			);
+			path = ENAWidget;
+			sourceTree = "<group>";
+		};
 		853D987824694A1E00490DBA /* BaseElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -1382,6 +1432,7 @@
 				85D7593D2457048F008175F0 /* ENA */,
 				85D7595724570491008175F0 /* ENATests */,
 				85D7596224570491008175F0 /* ENAUITests */,
+				784E8EFC24CC871E00B2B090 /* ENAWidget */,
 				85D7593C2457048F008175F0 /* Products */,
 				5107E3D72459B2D60042FC9B /* Frameworks */,
 				B1741B572462EB26006275D9 /* Recovered References */,
@@ -1397,6 +1448,7 @@
 				85D7593B2457048F008175F0 /* ENA.app */,
 				85D7595424570491008175F0 /* ENATests.xctest */,
 				85D7595F24570491008175F0 /* ENAUITests.xctest */,
+				784E8EF724CC871E00B2B090 /* ENAWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1568,15 +1620,6 @@
 			path = "Mock Objects";
 			sourceTree = "<group>";
 		};
-		A36FACC224C5E9FC00DED947 /* __tests__ */ = {
-			isa = PBXGroup;
-			children = (
-				A36FACC324C5EA1500DED947 /* ExposureDetectionViewControllerTests.swift */,
-				A3483B0A24C5EFA40037855F /* MockExposureDetectionViewControllerDelegate.swift */,
-			);
-			path = __tests__;
-			sourceTree = "<group>";
-		};
 		A32CA72D24B6F28700B1A994 /* __tests__ */ = {
 			isa = PBXGroup;
 			children = (
@@ -1585,6 +1628,15 @@
 				516E42FA24B7739F0008CC30 /* HomeUnknownRiskCellConfiguratorTests.swift */,
 				516E42FC24B776A90008CC30 /* HomeLowRiskCellConfiguratorTests.swift */,
 				516E42FF24B777B20008CC30 /* HomeHighRiskCellConfiguratorTests.swift */,
+			);
+			path = __tests__;
+			sourceTree = "<group>";
+		};
+		A36FACC224C5E9FC00DED947 /* __tests__ */ = {
+			isa = PBXGroup;
+			children = (
+				A36FACC324C5EA1500DED947 /* ExposureDetectionViewControllerTests.swift */,
+				A3483B0A24C5EFA40037855F /* MockExposureDetectionViewControllerDelegate.swift */,
 			);
 			path = __tests__;
 			sourceTree = "<group>";
@@ -2165,6 +2217,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		784E8EF624CC871E00B2B090 /* ENAWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784E8F0E24CC872100B2B090 /* Build configuration list for PBXNativeTarget "ENAWidgetExtension" */;
+			buildPhases = (
+				784E8EF324CC871E00B2B090 /* Sources */,
+				784E8EF424CC871E00B2B090 /* Frameworks */,
+				784E8EF524CC871E00B2B090 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ENAWidgetExtension;
+			productName = ENAWidgetExtension;
+			productReference = 784E8EF724CC871E00B2B090 /* ENAWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		85D7593A2457048F008175F0 /* ENA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 85D7596824570491008175F0 /* Build configuration list for PBXNativeTarget "ENA" */;
@@ -2174,10 +2243,12 @@
 				85D759382457048F008175F0 /* Frameworks */,
 				85D759392457048F008175F0 /* Resources */,
 				B102BDB924603FD600CD55A2 /* Embed Frameworks */,
+				784E8F0824CC872100B2B090 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				784E8F0624CC872000B2B090 /* PBXTargetDependency */,
 			);
 			name = ENA;
 			packageProductDependencies = (
@@ -2232,10 +2303,13 @@
 		85D759332457048F008175F0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1150;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "SAP SE";
 				TargetAttributes = {
+					784E8EF624CC871E00B2B090 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					85D7593A2457048F008175F0 = {
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1150;
@@ -2280,11 +2354,20 @@
 				85D7593A2457048F008175F0 /* ENA */,
 				85D7595324570491008175F0 /* ENATests */,
 				85D7595E24570491008175F0 /* ENAUITests */,
+				784E8EF624CC871E00B2B090 /* ENAWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		784E8EF524CC871E00B2B090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784E8F0124CC872000B2B090 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85D759392457048F008175F0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2372,6 +2455,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		784E8EF324CC871E00B2B090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784E8EFE24CC871E00B2B090 /* ENAWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85D759372457048F008175F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2727,6 +2818,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		784E8F0624CC872000B2B090 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 784E8EF624CC871E00B2B090 /* ENAWidgetExtension */;
+			targetProxy = 784E8F0524CC872000B2B090 /* PBXContainerItemProxy */;
+		};
 		85D7595624570491008175F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 85D7593A2457048F008175F0 /* ENA */;
@@ -2893,6 +2989,7 @@
 		011E4AFD2483A269002E6412 /* Community */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "${PROJECT}/Resources/ENACommunity.entitlements";
@@ -3049,6 +3146,7 @@
 		0140535824A0E077000A5121 /* TestFlight */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "${PROJECT}/Resources/ENA.entitlements";
@@ -3199,6 +3297,7 @@
 		01DE5A75248E3CF800F6D7F2 /* UITesting */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "${PROJECT}/Resources/ENACommunity.entitlements";
@@ -3294,6 +3393,139 @@
 				TEST_TARGET_NAME = ENA;
 			};
 			name = UITesting;
+		};
+		784E8F0924CC872100B2B090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = $IPHONE_APP_CODE_SIGN_IDENTITY;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ENAWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.rki.coronawarnapp-dev.ENAWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		784E8F0A24CC872100B2B090 /* Community */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ENAWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.rki.coronawarnapp.ENAWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Community;
+		};
+		784E8F0B24CC872100B2B090 /* UITesting */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ENAWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.rki.coronawarnapp-dev.ENAWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = UITesting;
+		};
+		784E8F0C24CC872100B2B090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = $IPHONE_APP_CODE_SIGN_IDENTITY;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ENAWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.rki.coronawarnapp.ENAWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		784E8F0D24CC872100B2B090 /* TestFlight */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = $IPHONE_APP_CODE_SIGN_IDENTITY;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = ENAWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.rki.coronawarnapp-dev.ENAWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = TestFlight;
 		};
 		85D7596624570491008175F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3415,6 +3647,7 @@
 		85D7596924570491008175F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "${PROJECT}/Resources/ENATest.entitlements";
@@ -3445,7 +3678,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "de.rki.coronawarnapp-dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = $IPHONE_APP_DIST_PROF_SPECIFIER;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "ENA-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -3456,6 +3689,7 @@
 		85D7596A24570491008175F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "${PROJECT}/Resources/ENA.entitlements";
@@ -3601,6 +3835,18 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		784E8F0E24CC872100B2B090 /* Build configuration list for PBXNativeTarget "ENAWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784E8F0924CC872100B2B090 /* Debug */,
+				784E8F0A24CC872100B2B090 /* Community */,
+				784E8F0B24CC872100B2B090 /* UITesting */,
+				784E8F0C24CC872100B2B090 /* Release */,
+				784E8F0D24CC872100B2B090 /* TestFlight */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		85D759362457048F008175F0 /* Build configuration list for PBXProject "ENA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
